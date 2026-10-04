@@ -1,16 +1,112 @@
-# React + Vite
+# AI-Based House Price Estimation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Project Overview
 
-Currently, two official plugins are available:
+This project presents an AI-based house price estimation system developed for **PE6201 – Emerging AI Technologies** at Nanyang Technological University.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The system estimates house prices based on user-provided property information. It combines a machine learning model with a web-based interface to provide an accessible and interactive house price estimation experience.
 
-## React Compiler
+## 2. Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User-friendly web interface for entering property information
+- AI-based house price estimation
+- Backend prediction service
+- Clear presentation of prediction results
+- Demo data for testing the system
+- Evaluation using test cases and ground-truth values
 
-## Expanding the ESLint configuration
+## 3. Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React + Vite
+- **Backend:** Python
+- **Machine Learning:** House price prediction model
+- **Development:** Visual Studio Code
+
+## 4. Project Structure
+
+The repository contains the following main components:
+
+```text
+project/
+├── frontend/        # Web interface
+├── backend/         # Prediction and backend logic
+├── data/            # Demo and evaluation data
+├── evals/           # Evaluation files
+├── README.md        # Project documentation
+└── ...
+```
+
+## 5. How to Run
+
+### Frontend
+
+Install the required dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+After running the command, open the local URL provided in the terminal.
+
+### Backend
+
+Run the backend according to the instructions and dependencies provided in the backend files.
+
+The frontend communicates with the backend to obtain the house price estimation results.
+
+## 6. Demo Data
+
+Demo data is provided in the repository for testing the system.
+
+Users can use the provided property information as example inputs and submit them through the interface to obtain house price estimations.
+
+## 7. Evaluation
+
+The system is evaluated using a set of test cases and corresponding **ground-truth values**.
+
+The evaluation compares the model's estimated house prices with the ground-truth values to assess the performance of the system.
+
+The detailed evaluation results and analysis are provided in the project documentation and final report.
+
+## 8. Documentation
+
+The project documentation covers:
+
+- Problem definition and motivation
+- System design
+- AI and machine learning approach
+- Data and evaluation methodology
+- System results
+- Limitations and critical evaluation
+- Potential future improvements
+
+## 9. Limitations
+
+House prices can be influenced by many factors that may not be fully captured by the available data.
+
+Therefore, the estimated prices should be treated as model predictions rather than guaranteed market values.
+
+The performance of the system may also depend on the quality and coverage of the available data.
+
+## 10. Project Deliverables
+
+The repository contains the project code and supporting materials required for the final project submission, including:
+
+- Source code
+- Demo data
+- Evaluation data
+- Ground-truth values
+- Project documentation
+- Final report
+
+## 11. Course Information
+
+**Course:** PE6201 – Emerging AI Technologies  
+**Institution:** Nanyang Technological University  
+**Project:** AI-Based House Price Estimation
